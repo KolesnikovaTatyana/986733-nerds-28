@@ -27,6 +27,14 @@
       <h2 class="visually-hidden">Фильтр шаблонов</h2>
       <form action="https://echo.htmlacademy.ru" method="get">
         <fieldset>
+          <legend>Стоимость:</legend>
+          <input type="range" min="0" max="20000">
+          <label for="price-min-field">От</label>
+          <input type="text" name="price-min" id="price-min-field">
+          <label for="price-max-field">До</label>
+          <input type="text" name="price-max" id="price-max-field">
+        </fieldset>
+        <fieldset>
           <legend>Сетка:</legend>
           <ul>
             <li>
@@ -72,6 +80,17 @@
       </form>
     </section>
     <section>
+      <h2 class="visually-hidden">Сортировка шаблонов</h2>
+      <p>Сортировать:</p>
+      <ul>
+        <li><a href="">По цене</a></li>
+        <li><a href="">По типу</a></li>
+        <li><a href="">По названию</a></li>
+        <li><button type="button"><img src="img/icon-down-dir.svg" alt="сортировать по убыванию" width="11"
+              height="10"></button></li>
+        <li><button type="button"><img src="img/icon-up-dir.svg" alt="сортировать по возрастанию" width="11"
+              height="10"></button></li>
+      </ul>
       <h2 class="visually-hidden">Список шаблонов</h2>
       <ul>
         <li>
@@ -150,7 +169,7 @@
   </main>
   <footer>
     <section>
-      <h2>Контакты</h2>
+      <h2 class="visually-hidden">Контакты</h2>
       <img src="img/map1.png" width="1440" height="416" alt="Карта" />
       <div>
         <p><b>Nërds design studio</b></p>
